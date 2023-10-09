@@ -110,6 +110,13 @@
   img {
     max-width: 100%;
   }
+  /* GRID */
+  .container {
+    max-width: 130rem;
+    padding: 1.5rem;
+    width: 100%;
+    margin: 0 auto;
+  }
 /* HEADER */
 .header {
     background: #fff;
@@ -146,6 +153,14 @@
 .header .burger__btn{
     display: none;
     transition: 0.5s ease;
+}
+.header .header__nav ul .header__mobile__btn {
+    display: none;
+    width: 20rem;
+    text-align: center;
+}
+.header .header__nav ul .header__mobile__btn a {
+    color: white;
 }
 .header .burger__btn span{
     display: block;
@@ -189,6 +204,15 @@
     .header .header__btn{
         display: none;
     }
+    .header .header__nav ul .header__mobile__btn {
+        display: inline-block;
+        background: #04ddb2;
+        border: 1px solid transparent;
+        border-radius: 40px;
+        padding: 1.5rem 2rem;
+        margin-left: 25%;
+        margin-top: 3rem;
+    }
     .header .header__nav.open{
         height: 70vh;
         transition: 0.5s ease;
@@ -203,4 +227,188 @@
     .header .burger__btn.open span:nth-child(2) {
         opacity: 0;
     }
+}
+
+/* BODY */
+
+.banner {
+    background: #f1f1f1;
+    position: relative;
+    padding-top: 64px;
+    z-index: -1;
+}
+.banner .banner__wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.banner .banner__title{
+    display: flex;
+    gap: 1rem;
+    margin-bottom: 12px;
+}
+.banner .banner__title h1, .banner__title span {
+    font-size: 64px;
+    font-weight: 700;
+}
+.banner .banner__text {
+    max-width: 600px;
+    margin-bottom: 4rem;
+}
+.banner .banner__text p {
+    font-size: 26px;
+    text-align: center;
+}
+
+/* CONTENT SECTION */
+.content-section {
+    position: relative;
+    background: #f1f1f1;
+    z-index: -1;
+}
+.content-section .container{
+    display: grid;
+    grid-template-columns: 50% 50%;
+    grid-template-rows: repeat(8, 1fr);
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.content-section__items {
+    border-radius: 24px;
+    margin: 24px;
+    max-width: 500px;
+    background: white;
+}
+.content-section__items img{
+    width: 500px;
+    border-top-left-radius: 24px;
+    border-top-right-radius: 24px;
+}
+.content-section__items .content-section__item-description {
+    width: 500px;
+    padding: 24px;
+    color: #2f2f2f;
+}
+.content-section .content-section__item-title h3 {
+    font-size: 22px;
+    font-weight: bolder;
+    margin-bottom: 3px;
+    color: #2f2f2f;
+}
+.content-section .content-section__item-context p {
+    font-size: 20px;
+}
+
+/* TRAIN */
+.train {
+    padding: 5rem 0;
+    background: #ffffff;
+}
+
+.train h2 {
+    font-size: 5rem;
+    color: black;
+    font-weight: 600;
+    max-width: 40rem;
+    text-align: center;
+    margin: 0 auto;
+    margin-bottom: 5rem;
+}
+
+.train .train-wrapper {
+    text-align: center;
+}
+
+.train a {
+    width: 15rem;
+    font-size: 2rem;
+}
+
+/* FOOTER */
+
+.footer {
+    padding: 4rem 0;
+    background: #fff;
+    max-width: 1072px;
+    margin: 0 auto;
+}
+.footer .footer__wrapper {
+    border-top: 1px solid #9f9f9f;
+    display: flex;
+    padding: 60px 80px;
+    gap: 9rem;
+    justify-content: center;
+    align-items: center;
+}
+.footer .footer__links h4 {
+    margin-bottom: 3rem;
+    font-weight: 600;
+}
+.footer .footer__links ul {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+.footer .footer__logo {
+    display: flex;
+    align-self: start;
+    flex-direction: column;
+}
+.footer .footer__logo ul {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+.footer .footer__logo ul li {
+    color: #6f6f6f;
+}
+.footer .footer__links ul li a {
+    color: #6f6f6f;
+}
+.footer .footer__logo img {
+    margin-bottom: 2rem;
+    width: 9rem;
+}
+.footer .footer__icons {
+    display: flex;
+    align-self: start;
+}
+.footer .footer__icons ul{
+    display: flex;
+    gap: 2rem;
+}
+.footer .footer__icons ul li a {
+    display: flex;
+    background: #04ddb2;
+    border-radius: 360px;
+    width: 3rem;
+    height: 3rem;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+    font-weight: bold;
+}
+
+/* REPEATABLE PATTERNS */
+.text__color__span {
+    color: #04ddb2;
+}
+.btn {
+    padding: 1rem 1.5rem;
+    border: 1px solid transparent;
+    display: inline-block;
+    border-radius: 5rem;
+    font-weight: 600;
+}
+
+.btn.bg--mint {
+    background: #04ddb2;
+    color: #ffffff;
+    transition: 0.5s ease;
+}
+
+.btn.bg--mint:hover {
+    transform: scale(1.1);
+    transition: 0.5 ease;
 }

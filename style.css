@@ -221,7 +221,7 @@
         margin: 0 auto;
     }
     .header .header__nav.open{
-        height: 53vh;
+        height: 70vh;
         transition: 0.5s ease;
         opacity: 100%;
     }
@@ -313,7 +313,15 @@
     font-size: 20px;
 }
 
-@media screen and (max-width: 500px) {
+@media screen and (max-width: 500px) and (min-width: 401px) {
+    .content-section__items {
+        max-width: 370px;
+    }
+    .content-section__items .content-section__item-description {
+        width: 370px;
+    }
+}
+@media screen and (max-width: 400px) {
     .content-section__items {
         max-width: 330px;
     }

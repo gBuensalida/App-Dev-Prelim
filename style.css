@@ -221,7 +221,7 @@
         margin: 0 auto;
     }
     .header .header__nav.open{
-        height: 70vh;
+        height: 52vh;
         transition: 0.5s ease;
         opacity: 100%;
     }
